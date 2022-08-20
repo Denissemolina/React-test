@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "user": 1,
+      "description": "",
+      "complete": "yes"
+    },
+    {
+      "Go to the doctor": "",
+      "id": 2
+    },
+    {
+      "Research about UX/UI": "",
+      "id": 3
+    }
+  ]
+}

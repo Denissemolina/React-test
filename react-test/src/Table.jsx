@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Table = () => {
   return (
     <div>
-<table class="table">
+<table className="table">
   <thead>
     <tr>
       <th scope="col">#</th>

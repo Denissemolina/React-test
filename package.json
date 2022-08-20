@@ -1,6 +1,25 @@
 {
   "dependencies": {
+    "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "react-bootstrap": "^2.5.0"
-  }
+  },
+  "name": "reto-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch -p 4000 db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denissemolina/React-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Denissemolina/React-test/issues"
+  },
+  "homepage": "https://github.com/Denissemolina/React-test#readme",
+  "description": ""
 }
