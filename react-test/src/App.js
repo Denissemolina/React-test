@@ -1,4 +1,3 @@
-import Table from "./Table";
 import Form from "./Form";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,36 +18,33 @@ function App() {
           setLoading(true);
           setError(error);
         };
-      console.log(data.id);
     });
   };
 
-  // useEffect(() => {
-  //   fetchProducts();
-  // }, []);
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   if (error) {
     return <div>Error</div>;
-    // } else if (!loading) {
-    //   return <div>Loading..</div>;
-    // }
+  } else if (!loading) {
+    return <div>Loading..</div>;
   } else {
     return (
       <div className="App">
         <header className="App-header"></header>
         <Form />
-
-        {listOfTasks.map((item, key) =>(
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>User</th>
+            <th>Description</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        {listOfTasks.map((item, key) => (
           <div key={key}>
             <table className="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">User</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Completed</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <th scope="row">{item.id}</th>
@@ -59,7 +55,7 @@ function App() {
               </tbody>
             </table>
           </div>
-       ))}
+        ))}
       </div>
     );
   }

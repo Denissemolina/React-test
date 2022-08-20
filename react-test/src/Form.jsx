@@ -6,11 +6,15 @@ import { postTasks } from "./api/handlingAPI";
 const Form = () => {
   const [task, setTask] = useState([]);
 
+  let gettingTask = {
+    task: task,
+  };
+
   const handleChange = (e) => {
     setTask(e.target.value);
   };
   const handleClick = () => {
-    postTasks(task).then((data) => {
+    postTasks(gettingTask).then((data) => {
       setTask(data);
     });
   };
@@ -18,7 +22,7 @@ const Form = () => {
   return (
     <form>
       <div className="form-row align-items-center">
-        <div >
+        <div>
           <input
             type="text"
             onChange={handleChange}

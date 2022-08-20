@@ -1,26 +1,28 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "user": 1,
-      "description": "",
-      "complete": "yes"
+      "task": "Make to do list",
+      "id": 1
     },
     {
-      "Go to the doctor": "",
+      "task": "Go to the doctor",
       "id": 2
     },
     {
-      "Research about UX/UI": "",
+      "task": "Research about UX/UI",
       "id": 3
     },
     {
-      "Watch Sandman on netflix": "",
+      "task": "Watch Sandman on netflix",
       "id": 4
     },
     {
-      "Go to the market": "",
+      "task": "Go to the market",
       "id": 5
+    },
+    {
+      "task": "Finish course",
+      "id": 6
     }
   ]
 }
