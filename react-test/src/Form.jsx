@@ -18,7 +18,7 @@ const Form = () => {
   return (
     <form>
       <div className="form-row align-items-center">
-        <div className="col-auto">
+        <div >
           <input
             type="text"
             onChange={handleChange}
